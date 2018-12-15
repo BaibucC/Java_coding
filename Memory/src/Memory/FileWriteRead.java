@@ -159,16 +159,16 @@ public class FileWriteRead {
 
     public void addInfo(List resultListLarge, List resultListMedium) {
         try {
-            if (resultListLarge.getItemCount() != 0 && resultListMedium.getItemCount() != 0) {
-                resultListLarge.removeAll();
-                resultListMedium.removeAll();
-            }
+            resultListLarge.removeAll();
+            resultListMedium.removeAll();
+
         } catch (Exception y) {
             System.out.println("result remove");
         }
 
         BufferedReader input2 = null;
         BufferedReader input3 = null;
+
         try {
             input2 = new BufferedReader(new FileReader("Memory_game_data\\resultListL.txt"));
             input3 = new BufferedReader(new FileReader("Memory_game_data\\resultListM.txt"));

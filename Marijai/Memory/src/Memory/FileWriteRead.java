@@ -159,10 +159,8 @@ public class FileWriteRead {
 
     public void addInfo(List resultListLarge, List resultListMedium) {
         try {
-            if (resultListLarge.getItemCount() != 0 && resultListMedium.getItemCount() != 0) {
-                resultListLarge.removeAll();
-                resultListMedium.removeAll();
-            }
+            resultListLarge.removeAll();
+            resultListMedium.removeAll();
         } catch (Exception y) {
             System.out.println("result remove");
         }
