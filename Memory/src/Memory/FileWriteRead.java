@@ -128,7 +128,6 @@ public class FileWriteRead {
             String number = (i < 9) ? ("  " + (i + 1)) : String.valueOf(i + 1);
             list.add(number + ":     " + ArrayForSort.get(i));
         }
-
     }
 
     public void userInfo(JComboBox userList) {
@@ -149,7 +148,6 @@ public class FileWriteRead {
         } finally {
             try {
                 input.close();
-
             } catch (IOException ex) {
                 Logger.getLogger(Game.class
                         .getName()).log(Level.SEVERE, null, ex);
@@ -161,11 +159,9 @@ public class FileWriteRead {
         try {
             resultListLarge.removeAll();
             resultListMedium.removeAll();
-
         } catch (Exception y) {
             System.out.println("result remove");
         }
-
         BufferedReader input2 = null;
         BufferedReader input3 = null;
 
@@ -197,7 +193,6 @@ public class FileWriteRead {
             try {
                 input2.close();
                 input3.close();
-
             } catch (IOException ex) {
                 Logger.getLogger(Game.class
                         .getName()).log(Level.SEVERE, null, ex);
